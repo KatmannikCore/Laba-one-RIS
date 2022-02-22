@@ -10,12 +10,12 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
-  
+
   const phone = require("./phoneNumber.js");
   const del = require('./delete.js');  
   
-  console.log(phone.createPhoneNumber([1,2,9,4,5,6,7,8,9]))
-  console.log(del.arrayDiff([1,2,3,4,4,4,4,5,6,6], [2,4]))
+  console.log(phone.createPhoneNumber())
+  console.log(del.arrayDiff())
 
 });
+
